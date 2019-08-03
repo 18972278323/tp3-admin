@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test7</title>
+</head>
+<body>
+	一维数组的取值方式:<br>
+	{$arr1[0]} -> {$arr1[1]} -> {$arr1[2]} -> {$arr1[3]}<br>
+	{$arr1.0}  => {$arr1.1}  => {$arr1.2}  => {$arr1.3}<hr>
+
+	二维数组的取值方式:<br>
+	{$arr2[0][0]} -> {$arr2[0][1]}<br>
+	{$arr2[1][0]} -> {$arr2[1][1]}<br>
+	{$arr2.2.0}  => {$arr2.2.1}<br>
+	{$arr2.3.0}  => {$arr2.3.1}<hr>
+
+ 
+	volist遍历一维数组:<br>
+	<volist name='arr1' id='vol'>
+		{$vol}<br>
+	</volist>
+	<hr>
+	volist遍历二维数组:<br>
+	<volist name='arr2' id='vol'>
+		<volist name='vol' id='vo'>
+			{$vo} =
+		</volist><br>
+	</volist>
+	<hr>
+	foreach遍历一维数组:<br>
+	<foreach name='arr1' item='value'>
+		{$value}<br>
+	</foreach>
+</body>
+</html>
